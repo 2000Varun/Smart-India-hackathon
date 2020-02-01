@@ -135,7 +135,7 @@ while True:
             print("pump turning off")
             if present_status != previous_status and present_status == -1:
                 previous_status = present_status
-                server.sendmail("from_email_address", "to_email_address", msg1)
+                server.sendmail("bhalla.tanishq2000@gmail.com", "aggarwalvarun2000@gmail.com", msg1)
                 server.quit()
             pump.on()
             sleep(1)
@@ -143,7 +143,7 @@ while True:
             present_status = 1
             if present_status != previous_status and present_status == 1:
                 previous_status = present_status
-                server.sendmail("from_email_address", "to_email_address", msg2)
+                server.sendmail("bhalla.tanishq2000@gmail.com", "aggarwalvarun2000@gmail.com", msg2)
                 server.quit()
             pump.off()
 
